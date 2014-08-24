@@ -16,7 +16,7 @@
 # [2,]  0.07294430 -0.30769231  0.14323607
 # [3,] -0.15782493  0.53846154 -0.16445623
 
-
+##########################################################################
 ## makeCacheMatrix; based on the example "Caching the Mean of a Vector",creates
 # a special "vector", which is really a list containing a functionto
 #      1. set the value of the vector
@@ -36,7 +36,7 @@ makeCacheMatrix <- function(x = matrix()) {
         list(setM = setM, getM = getM, setMinv = setMinv,getMinv = getMinv)
 }
 
-
+##########################################################################
 ## cacheSolve function; calculates the mean of the special "vector"
 # created with the above function. However, it first checks to see if
 # the mean has already been calculated. If so, it gets the mean from 
@@ -57,3 +57,4 @@ cacheSolve <- function(x, ...) {
                 x$setMinv(inv)
                 inv
                 }
+##########################################################################
